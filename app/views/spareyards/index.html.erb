@@ -1,0 +1,29 @@
+<h1>Listing spareyards</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Province</th>
+    <th>Address</th>
+    <th>Telephone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @spareyards.each do |spareyard| %>
+  <tr>
+    <td><%= spareyard.name %></td>
+    <td><%= spareyard.province %></td>
+    <td><%= spareyard.address %></td>
+    <td><%= spareyard.telephone %></td>
+    <td><%= link_to 'Show', spareyard %></td>
+    <td><%= link_to 'Edit', edit_spareyard_path(spareyard) %></td>
+    <td><%= link_to 'Destroy', spareyard, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Spareyard', new_spareyard_path %>

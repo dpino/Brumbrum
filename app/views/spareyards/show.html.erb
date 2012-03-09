@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @spareyard.name %>
+</p>
+
+<p>
+  <b>Province:</b>
+  <%= @spareyard.province %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @spareyard.address %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%= @spareyard.telephone %>
+</p>
+
+
+<%= link_to 'Edit', edit_spareyard_path(@spareyard) %> |
+<%= link_to 'Back', spareyards_path %>
