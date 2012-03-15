@@ -1,5 +1,7 @@
 <p><span style="color: #aaa"><%= @spareyards.count %> desguaces encontrados</span></p>
 
+<%= paginate @spareyards %>  
+
 <ul>
 <% @spareyards.each do |spareyard| %>
     <li>
