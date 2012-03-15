@@ -1,29 +1,18 @@
-<h1>Listing spareyards</h1>
+<p><span style="color: #aaa"><%= @spareyards.count %> desguaces encontrados</span></p>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Province</th>
-    <th>Address</th>
-    <th>Telephone</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+<ul>
 <% @spareyards.each do |spareyard| %>
-  <tr>
-    <td><%= spareyard.name %></td>
-    <td><%= spareyard.province %></td>
-    <td><%= spareyard.address %></td>
-    <td><%= spareyard.telephone %></td>
-    <td><%= link_to 'Show', spareyard %></td>
-    <td><%= link_to 'Edit', edit_spareyard_path(spareyard) %></td>
-    <td><%= link_to 'Destroy', spareyard, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+    <li>
+        <div class="list_item">
+            <span class="title">
+                <%= link_to spareyard.name, spareyard %>
+            </span>
+        </div>
+    </li>
 <% end %>
-</table>
+</ul>
 
-<br />
-
-<%= link_to 'New Spareyard', new_spareyard_path %>
+<% # link_to 'Show', spareyard %>
+<% # link_to 'Edit', edit_spareyard_path(spareyard) %>
+<% # link_to 'Destroy', spareyard, confirm: 'Are you sure?', method: :delete %>
+<% # link_to 'New Spareyard', new_spareyard_path %>

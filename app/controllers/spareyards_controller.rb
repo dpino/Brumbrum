@@ -2,7 +2,7 @@ class SpareyardsController < ApplicationController
   # GET /spareyards
   # GET /spareyards.json
   def index
-    @spareyards = Spareyard.all
+    @spareyards = Spareyard.find(:all, :order => "name")
 
     respond_to do |format|
       format.html # index.html.erb
