@@ -1,14 +1,41 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-  <title>Recambiosvigo</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<meta charset="UTF-8">
+	<title>Recambios Vigo: Directorio de desguaces de Vigo y alrededores</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
 </head>
+
 <body>
 
-<%= yield %>
+<div class="wrap">
+    <div class="title">
+        <h1>Recambios Vigo</h1>
+        <h3>Directorio de desguaces de Vigo y alrededores</h3>
+    </div>
+
+    <div class="snapshot">
+        <img src="assets/recambios-vigo.jpg" alt="Recambios Vigo" />
+    </div>
+
+    <div class="content">
+        <%= yield %>
+    </div>
+
+    <div class="footer">
+        <div class="left">
+            <span>Acerca de nosotros</span>
+            <span>Términos y condiciones</span>
+        </div>
+        <div class="right">
+            <span><img src="assets/twitter-logo-small.png" />twitter.com/brumbrum</span>
+            <span><img src="assets/fb-logo-small.png" />facebook.com/brumbrum</span>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>

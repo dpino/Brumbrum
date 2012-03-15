@@ -1,4 +1,7 @@
 Recambiosvigo::Application.routes.draw do
+
+  root :to => 'spareyards#index' 
+
   resources :spareyards
 
   # The priority is based upon order of creation:

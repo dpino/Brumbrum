@@ -1,0 +1,103 @@
+/* General */
+body {
+    background: #eee; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Trebuchet MS", Area, Helvetica, sans-serif;
+}
+
+div.wrap {
+    margin: 0px 200px; 
+    border: 2px solid black; 
+    border-top: 0px;
+    border-bottom: 0px;
+    background: white;
+}
+
+ul > li {
+    margin-bottom: 5px;
+}
+
+div.list_item {
+    background-color: lightblue;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 600px;
+}
+
+div.list_item span.title {
+
+}
+
+span.title > a {
+    color: #1d0579;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+div.snapshot img {
+    width: 100%;
+}
+
+h1 {
+    margin: 0px;
+    color: orange;
+}
+
+h3 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+div.title {
+    margin: 0px 10px;
+}
+
+div.content {
+    margin: 0px 10px;
+}
+
+ul {
+    list-style-image: url('img/right-arrow-small.png');
+}
+
+div.footer {
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding-top: 10pt;
+    padding-left: 20pt;
+    margin-top: 50pt;
+    height: 50pt;
+}
+
+div.footer span {
+    display: block;
+}
+
+div.left {
+    float: left;
+}
+
+div.right {
+    margin-left: 50pt;
+    padding-left: 100pt;
+}
+
+/* Detail desguace */
+div.item {
+    background: lightblue;
+    margin-top: 10pt;
+    padding: 10pt;
+    width: 480pt;
+}
+
+div.item span {
+    display: block;
+}
+
+div.item span.title {
+    font-weight: bold;
+    font-size: 24px;
+}
