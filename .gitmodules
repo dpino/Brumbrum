@@ -1,3 +1,0 @@
-[submodule "vendor/plugins/cartographer"]
-	path = vendor/plugins/cartographer
-	url = git://github.com/parolkar/cartographer.git
