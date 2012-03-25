@@ -81,6 +81,11 @@ div.left {
     float: left;
 }
 
+div.left a {
+    color: white;
+    text-decoration: none;
+}
+
 div.right {
     margin-left: 50pt;
     padding-left: 100pt;
