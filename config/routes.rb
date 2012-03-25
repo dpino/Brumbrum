@@ -1,10 +1,12 @@
 Recambiosvigo::Application.routes.draw do
 
+  get "pages/home"
+
   get "pages/about_us"
 
   get "pages/terms_and_cons"
 
-  root :to => 'spareyards#index' 
+  root :to => 'pages#home' 
 
   resources :spareyards
 

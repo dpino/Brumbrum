@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def terms_and_cons
   end
+
+  def home
+  end
 end
