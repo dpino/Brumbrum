@@ -60,7 +60,7 @@ div.content {
 }
 
 ul {
-    list-style-image: url('img/right-arrow-small.png');
+    // list-style-image: url('img/right-arrow-small.png');
 }
 
 div.footer {

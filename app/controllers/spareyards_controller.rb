@@ -2,7 +2,8 @@ class SpareyardsController < ApplicationController
   # GET /spareyards
   # GET /spareyards.json
   def index
-    @spareyards = Spareyard.order("name").page(params[:page]).per(15)
+    @spareyards = Spareyard.where('province = ?', params[:location]).
+                    order("name").page(params[:page]).per(15)
 
     respond_to do |format|
       format.html # index.html.erb
