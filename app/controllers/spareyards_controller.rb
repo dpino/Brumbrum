@@ -16,13 +16,6 @@ class SpareyardsController < ApplicationController
   def show
     @spareyard = Spareyard.find(params[:id])
     @map = @spareyard.to_gmaps4rails
-    
-    puts @map
-    #@map = "{ 
-    #    'zoom': 8,
-    #    'center': {'lat': -34.397, 'lng': 150.644}
-    #}"
-    #          mapTypeId: google.maps.MapTypeId.ROADMAP}"
 
     respond_to do |format|
       format.html # show.html.erb
