@@ -2,7 +2,7 @@
 
 <%= paginate @spareyards %>  
 
-<ul>
+<ul class="spareyards">
 <% @spareyards.each do |spareyard| %>
     <li>
         <div class="list_item">
@@ -13,3 +13,5 @@
     </li>
 <% end %>
 </ul>
+
+<%= paginate @spareyards %>  

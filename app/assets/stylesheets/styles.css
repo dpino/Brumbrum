@@ -59,8 +59,8 @@ div.content {
     margin: 0px 10px;
 }
 
-ul {
-    // list-style-image: url('img/right-arrow-small.png');
+ul.spareyards {
+    list-style-image: url("/assets/orange-triangle.png");
 }
 
 div.footer {
