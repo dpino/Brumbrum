@@ -5,5 +5,7 @@ en:
   hello: "Hello world"  
   views:  
     pagination:  
-      previous: "&lt; Previous"  
-      next: "Next &gt;"  
+      previous: "&lt; Anterior"  
+      next: "Siguiente &gt;"  
+      last: "Último »"  
+      first: "« Primero"
