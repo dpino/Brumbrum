@@ -107,3 +107,21 @@ div.item span.title {
     font-weight: bold;
     font-size: 24px;
 }
+
+.logo {
+    font-size: 48px; 
+    margin-bottom: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: orange; 
+}
+
+.logo a:hover {
+    color: orange;
+}
+
+.logo a:visited {
+    color: orange;
+}
