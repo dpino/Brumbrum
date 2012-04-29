@@ -3,12 +3,18 @@ class SpareyardsController < ApplicationController
   # GET /spareyards.json
   def index
     @spareyards = Spareyard.where('province = ?', params[:location]).
-                    order("name").page(params[:page]).per(15)
+        order("name").page(params[:page]).per(15)
+    @total_spareyards = spareyards_in(params[:location])
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @spareyards }
     end
+  end
+
+  def spareyards_in(province)
+    result = Spareyard.select('count(*) as count').where('province = ?', params[:location])
+    return result.empty? ? 0 : result.count
   end
 
   # GET /spareyards/1
