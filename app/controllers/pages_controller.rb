@@ -6,6 +6,6 @@ class PagesController < ApplicationController
   end
 
   def home
-      @provinces = Spareyard.select("province as name, count(*) as count").group("province")
+      @provinces = Spareyard.select("province as name, count(*) as count").group("province").order(:name)
   end
 end
