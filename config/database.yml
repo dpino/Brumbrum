@@ -1,12 +1,22 @@
-# MySQL
+# PostgreSQL
 development:
-  adapter: mysql2
+  adapter: postgresql
   host: 127.0.0.1
   encoding: utf8
   database: brumbrum
   pool: 5
   username: dpino
   password: xieXee3i
+
+# MySQL
+#development:
+#  adapter: mysql2
+#  host: 127.0.0.1
+#  encoding: utf8
+#  database: brumbrum
+#  pool: 5
+#  username: dpino
+#  password: xieXee3i
 
 # SQLite version 3.x
 #   gem install sqlite3
