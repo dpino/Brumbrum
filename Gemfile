@@ -10,6 +10,10 @@ gem 'rails', '3.2.1'
 gem 'postgres-pr'
 gem 'pg'
 
+# Use my own version of taps and sequel
+gem 'taps', '0.3.24'
+gem 'sequel','3.20.0'
+
 gem 'kaminari'
 gem 'gmaps4rails', :git => 'https://github.com/apneadiving/Google-Maps-for-Rails.git'
 
