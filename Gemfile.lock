@@ -66,6 +66,7 @@ GEM
     multi_json (1.1.0)
     pg (0.13.2)
     polyglot (0.3.3)
+    postgres-pr (0.6.3)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -119,6 +120,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   pg
+  postgres-pr
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)

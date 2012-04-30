@@ -7,6 +7,7 @@ gem 'rails', '3.2.1'
 
 # gem 'sqlite3'
 # gem 'mysql2'
+gem 'postgres-pr'
 gem 'pg'
 
 gem 'kaminari'
