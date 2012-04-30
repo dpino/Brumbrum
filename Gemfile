@@ -7,12 +7,10 @@ gem 'rails', '3.2.1'
 
 # gem 'sqlite3'
 # gem 'mysql2'
-gem 'postgres-pr'
 gem 'pg'
 
-# Use my own version of taps and sequel
-gem 'taps', '0.3.24'
-gem 'sequel','3.20.0'
+# Webserver
+gem 'thin'
 
 gem 'kaminari'
 gem 'gmaps4rails', :git => 'https://github.com/apneadiving/Google-Maps-for-Rails.git'
