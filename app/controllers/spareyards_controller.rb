@@ -2,7 +2,7 @@ class SpareyardsController < ApplicationController
   # GET /spareyards
   # GET /spareyards.json
   def index
-    @spareyards = Spareyard.where('province = ?', params[:location]).
+    @spareyards = Spareyard.where('lower(province) = ?', params[:location].downcase).
         order("name").page(params[:page]).per(15)
     @total_spareyards = spareyards_in(params[:location])
 
