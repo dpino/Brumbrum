@@ -14,7 +14,7 @@ class SpareyardsController < ApplicationController
   end
 
   def spareyards_in(province)
-    result = Spareyard.select('count(*) as count').where('province = ?', params[:location])
+    result = Spareyard.select('count(*) as count').where('lower(province) = ?', params[:location].downcase)
     return result.empty? ? 0 : result.count
   end
 
