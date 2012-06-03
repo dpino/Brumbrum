@@ -63,6 +63,18 @@ ul.spareyards {
     list-style-image: url("/assets/orange-triangle.png");
 }
 
+ul.spareyards a {
+  text-decoration: none;
+}
+
+ul.spareyards div.list_item:hover {
+  background-color: orange;
+}
+
+ul.spareyards a:visited {
+  color: gray;
+}
+
 div.footer {
     background: black;
     color: white;
