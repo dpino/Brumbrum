@@ -10,6 +10,11 @@ Recambiosvigo::Application.routes.draw do
 
   resources :spareyards
 
+  resources :desguaces, :path => :spareyards
+  match "/desguace/:id" => "spareyards#show"
+  match "/desguaces/" => "spareyards#index"
+  match "/desguaces/:location" => "spareyards#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

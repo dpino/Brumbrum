@@ -2,10 +2,10 @@ class SpareyardsController < ApplicationController
   # GET /spareyards
   # GET /spareyards.json
   def index
-    @province = params[:location]
-    @spareyards = Spareyard.where('lower(province) = ?', @province.downcase).
+    @province = params[:location].downcase
+    @spareyards = Spareyard.where('lower(province) = ?', @province).
         order("name").page(params[:page]).per(15)
-    @total_spareyards = spareyards_in(params[:location])
+    @total_spareyards = spareyards_in(@province)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,12 +14,12 @@ class SpareyardsController < ApplicationController
   end
 
   def spareyards_in(province)
-    result = Spareyard.select('count(*) as count').where('lower(province) = ?', params[:location].downcase)
+    result = Spareyard.select('count(*) as count').where('lower(province) = ?', province)
     return result.empty? ? 0 : result.count
   end
 
-  # GET /spareyards/1
-  # GET /spareyards/1.json
+  # GET /spareyard/1
+  # GET /spareyard/1.json
   def show
     @spareyard = Spareyard.find(params[:id])
     @map = @spareyard.to_gmaps4rails

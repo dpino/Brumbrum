@@ -3,12 +3,18 @@
 
 <%= paginate @spareyards %>  
 
+<%
+  def desguace(spareyard)
+    return "/desguace/#{spareyard.id}"
+  end
+%>
+
 <ul class="spareyards">
 <% @spareyards.each do |spareyard| %>
     <li>
         <div class="list_item">
             <span class="title">
-                <%= link_to spareyard.name, spareyard %>
+                <%= link_to spareyard.name, desguace(spareyard) %>
             </span>
         </div>
     </li>
